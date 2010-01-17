@@ -59,8 +59,8 @@ double clamp( double x, double low, double high ) {
     looks like the next move will take us through the target
     location.  */
 bool runTo( Vector2D const &pos,
-            Vector2D const &vel, 
-            Vector2D const &target, 
+            Vector2D const &vel,
+            Vector2D const &target,
             Vector2D &force,
             double epsilon = 0.1 ) {
   // Compute a vector that will move self toward the target point.
@@ -81,6 +81,8 @@ bool runTo( Vector2D const &pos,
   // Use all the residual force to move toward the target.
   resForce = BUMPER_FORCE_LIMIT - force.mag();
   force = force + direction.limit( resForce );
+  // Actually F*** the old force
+  force.x = force.y = 0;
 
   // See if this move will cross close enough to the target location.
   Vector2D nvel = ( vel + force ).limit( BUMPER_SPEED_LIMIT );
@@ -116,7 +118,7 @@ int main() {
   };
 
   BumperState bstate[ 2 ] = { MoveUp, MoveUp };
-  
+
   // Latest target for each bumper, the bumper will try to move through
   // this position to hit a puck toward the horizontal center.
   Vector2D target[ 2 ];
@@ -124,7 +126,7 @@ int main() {
   // How much longer the bumper has to pursue its target.  This keeps
   // the bumper from chasing after a bad target forever.
   int targetTime[ 2 ] = { 0, 0 };
-  
+
   int n, turnNum;
   cin >> turnNum;
   while ( turnNum >= 0 ) {
@@ -166,7 +168,7 @@ int main() {
     for ( int i = 0; i < 2; i++ ) {
       Bumper &bumper = blist[ i ];
       Vector2D force( 0, 0 );
-      
+
       // Choose an up direction for this bumper.
       Vector2D up( 0, i == 0 ? -1 : 1 );
 
@@ -200,7 +202,7 @@ int main() {
         // If we don't have a target, find one.
         if ( targetTime[ i ] <= 0 ) {
           for ( int j = 0; j < plist.size(); j++ )
-            // Find a grey target that on my side of the center line, 
+            // Find a grey target that on my side of the center line,
             // not moving too fast, close to me and kind of in the direction
             // i'm moving.  Also, make sure it's not too close to the top or
             // bottom.  Among these pucks, pick the one that's closest to
@@ -212,21 +214,22 @@ int main() {
                  ( plist[ j ].pos - bumper.pos ).mag() < 150 &&
                  ( plist[ j ].pos - bumper.pos ).norm() * across > 0.6 &&
                  fabs( plist[ j ].pos.y - 400 ) < 360 &&
-                 ( targetTime[ i ] <= 0 || 
+                 ( targetTime[ i ] <= 0 ||
                    ( plist[ j ].pos - bumper.pos ).norm() * across >
                    ( target[ i ] - bumper.pos ).norm() * across ) ) {
-              // Give 20 turns to hit the puck.
-              targetTime[ i ] = 20;
+              // Give 40 turns to hit the puck.
+              targetTime[ i ] = 40;
               // Hit it on its outside edge to bump it closer to the
               // center.
               target[ i ] = plist[ j ].pos - across * 8 + up * 11;
             }
 
-          if ( targetTime[ i ] > 0 ) {
-            // See what this player is doing
-            cerr << "New Target: " << i << " " 
-                 << target[ i ].x << " " << target[ i ].y << endl;
-          }
+            if ( targetTime[ i ] > 0 ) {
+                // See what this player is doing
+                cerr << "[OLD] New Target: " << i << " "
+                     << target[ i ].x << " " << target[ i ].y << endl;
+            }
+
         }
 
         // If w have a target, try to hit it.
