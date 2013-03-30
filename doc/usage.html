@@ -1,0 +1,955 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><script type="text/javascript">_cf_loadingtexthtml="<img alt=' ' src='/CFIDE/scripts/ajax/resources/cf/images/loading.gif'/>";
+_cf_contextpath="";
+_cf_ajaxscriptsrc="/CFIDE/scripts/ajax";
+_cf_jsonprefix='//';
+_cf_clientid='156C04B80C9A404B840CF283F922FC30';</script><script type="text/javascript" src="/CFIDE/scripts/ajax/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/yui/container/container-min.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/yui/animation/animation-min.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/messages/cfmessage.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/package/cfajax.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/package/cftooltip.js"></script>
+<link rel="stylesheet" type="text/css" href="/CFIDE/scripts/ajax/resources/yui/yui.css" />
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/adapter/yui/ext-yui-adapter.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/ext-core.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/package/resizable.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/package/dragdrop/dragdrop.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/package/util.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/build/state/State-min.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/package/widget-core.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/ext/package/dialog/dialogs.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/ajax/package/cfwindow.js"></script>
+<link rel="stylesheet" type="text/css" href="/CFIDE/scripts/ajax/resources/ext/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="/CFIDE/scripts/ajax/resources/cf/cf.css" />
+<script type="text/javascript" src="/CFIDE/scripts/cfform.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/masks.js"></script>
+<script type="text/javascript" src="/CFIDE/scripts/cfformhistory.js"></script>
+
+	  
+	  <title>Queue ICPC Challenge</title>
+
+	<base href="http://queue.acm.org/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+
+<link rel="stylesheet" type="text/css" media="all" href="css/acmq-cachekey4260.css" />
+<link rel="stylesheet" type="text/css" media="print" href="css/acmq_print-cachekey1777.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="js/global.js"></script>
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Latest Queue Content RSS 2.0" href="rss/feeds/latestitems.xml" />	
+<link rel="alternate" type="application/rss+xml" title="All Queue Content RSS 2.0" href="rss/feeds/queuecontent.xml" />
+	
+
+<link rel="alternate" type="application/rss+xml" title="Curmudgeon RSS 2.0"     href="rss/feeds/curmudgeon.xml" />
+<link rel="alternate" type="application/rss+xml" title="Opinion RSS 2.0"        href="rss/feeds/opinion.xml" />
+<link rel="alternate" type="application/rss+xml" title="Kode Vicious RSS 2.0"   href="rss/feeds/kodevicious.xml" />
+<link rel="alternate" type="application/rss+xml" title="ACM TechNews RSS"       href="http://www.infoinc.com/acm/TechNews.rss" />
+<link rel="alternate" type="application/rss+xml" title="Washington Updates RSS" href="http://usacm.acm.org/weblog2/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="RISKS Forum RSS"        href="rss/feeds/risksforum.xml" />
+
+
+<link rel="alternate" type="application/rss+xml" title="AI RSS 2.0"        href="rss/feeds/ai.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="API Design RSS 2.0"        href="rss/feeds/apidesign.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Bioscience RSS 2.0"        href="rss/feeds/bioscience.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Compliance RSS 2.0"        href="rss/feeds/compliance.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Component Technologies RSS 2.0"        href="rss/feeds/componenttechnologies.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Computer Architecture RSS 2.0"        href="rss/feeds/computerarchitecture.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Concurrency RSS 2.0"        href="rss/feeds/concurrency.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="DSPs RSS 2.0"        href="rss/feeds/dsps.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Databases RSS 2.0"        href="rss/feeds/databases.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Development RSS 2.0"        href="rss/feeds/development.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Distributed Computing RSS 2.0"        href="rss/feeds/distributedcomputing.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Distributed Development RSS 2.0"        href="rss/feeds/distributeddevelopment.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Email and IM RSS 2.0"        href="rss/feeds/emailandim.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Embedded Systems RSS 2.0"        href="rss/feeds/embeddedsystems.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Failure and Recovery RSS 2.0"        href="rss/feeds/failureandrecovery.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="File Systems and Storage RSS 2.0"        href="rss/feeds/filesystemsandstorage.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="GPU Computing RSS 2.0"        href="rss/feeds/gpucomputing.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Game Development RSS 2.0"        href="rss/feeds/gamedevelopment.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="HCI RSS 2.0"        href="rss/feeds/hci.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Managing Megaservices RSS 2.0"        href="rss/feeds/managingmegaservices.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Mobile Computing RSS 2.0"        href="rss/feeds/mobilecomputing.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Networks RSS 2.0"        href="rss/feeds/networks.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Object-Relational Mapping RSS 2.0"        href="rss/feeds/object-relationalmapping.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Open Source RSS 2.0"        href="rss/feeds/opensource.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Patching and Deployment RSS 2.0"        href="rss/feeds/patchinganddeployment.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Performance RSS 2.0"        href="rss/feeds/performance.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Power Management RSS 2.0"        href="rss/feeds/powermanagement.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Privacy and Rights RSS 2.0"        href="rss/feeds/privacyandrights.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Processors RSS 2.0"        href="rss/feeds/processors.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Programming Languages RSS 2.0"        href="rss/feeds/programminglanguages.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Purpose-built Systems RSS 2.0"        href="rss/feeds/purpose-builtsystems.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Quality Assurance RSS 2.0"        href="rss/feeds/qualityassurance.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="RFID RSS 2.0"        href="rss/feeds/rfid.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="SIP RSS 2.0"        href="rss/feeds/sip.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Search Engines RSS 2.0"        href="rss/feeds/searchengines.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Security RSS 2.0"        href="rss/feeds/security.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Semi-structured Data RSS 2.0"        href="rss/feeds/semi-structureddata.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Social Computing RSS 2.0"        href="rss/feeds/socialcomputing.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="System Evolution RSS 2.0"        href="rss/feeds/systemevolution.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Virtual Machines RSS 2.0"        href="rss/feeds/virtualmachines.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Virtualization RSS 2.0"        href="rss/feeds/virtualization.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="VoIP RSS 2.0"        href="rss/feeds/voip.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Web Development RSS 2.0"        href="rss/feeds/webdevelopment.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Web Security RSS 2.0"        href="rss/feeds/websecurity.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Web Services RSS 2.0"        href="rss/feeds/webservices.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Workflow Systems RSS 2.0"        href="rss/feeds/workflowsystems.xml" />
+
+
+
+<style>
+pre {
+	font-size: 1.2em;
+}
+body {
+	font-family: arial, verdana, sans-serif;
+	font-size: 0.8em;
+}
+.button {
+    border: 1px solid #999;
+    background: #369;
+    color: #fff;
+    font-size:0.8em;
+}
+.button:hover {
+    background: #9cf;
+}
+.fader {
+	background-image:url('/icpc/layout/fade.gif');
+	background-repeat:repeat-x;
+	border: 1px solid #ccf;
+	margin: 1px;
+	padding: 1px;
+}
+.box {
+	border: 1px solid #ccf;
+	margin: 1px;
+	margin-left: 185px;
+	padding: 1px;
+}
+.box2 {
+	border: 1px solid #ccf;
+	margin: 1px;
+	padding: 5px;
+}
+form {
+	color: #666;
+}
+</style>
+
+
+<script type="text/javascript">
+	ColdFusion.Ajax.importTag('CFTOOLTIP');
+</script>
+
+<script type="text/javascript">
+	
+	
+	YAHOO.util.Event.addListener("cf_tooltip_1266275496575","mouseover",ColdFusion.Tooltip.getToolTip,{"_cf_url":"tip_planetq.cfm","_cf_query":"","context":"cf_tooltip_1266275496575","hidedelay":"250","showdelay":"200","autodismissdelay":"20000","preventoverlap":"true"});
+</script>
+
+<script type="text/javascript">
+	ColdFusion.Ajax.importTag('CFWINDOW');
+</script>
+
+<script type="text/javascript">
+	var _cf_window_init_1266275496577=function()
+	{
+		_cf_bind_init_1266275496578=function()
+		{
+			ColdFusion.Bind.register([],{'bindTo':'morethemes_body','bindExpr':['pullthemes.cfm']},ColdFusion.Bind.urlBindHandler,false);
+		};ColdFusion.Event.registerOnLoad(_cf_bind_init_1266275496578);var _cf_window=ColdFusion.Window.create('morethemes','','pullthemes.cfm',{ modal:false, closable:true, divid:'cf_window1266275496576', draggable:true, resizable:true, fixedcenter:false, width:350, height:350, shadow:true, bodystyle:'text-align: left; font: 96%/1.5 Verdana, Arial, sans-serif; list-style: none; color:#3281A1;', callfromtag:true, minwidth:0, minheight:0, initshow:false, x:225, y:175});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_1266275496577);
+</script>
+
+		<script type="text/javascript">
+			ColdFusion.Ajax.importTag('CFFORM');
+		</script>
+		
+		<script type="text/javascript">
+			if (window.ColdFusion) ColdFusion.required['add_email']=true;
+		</script>
+		<script type="text/javascript">
+<!--
+    _CF_checkCFForm_1 = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+        //form element add_email required check
+        if( _CF_hasValue(_CF_this['add_email'], "TEXT", false ) )
+        {
+            //form element add_email 'EMAIL' validation checks
+            if (!_CF_checkEmail(_CF_this['add_email'].value, true))
+            {
+                _CF_onError(_CF_this, "add_email", _CF_this['add_email'].value, "Please enter a properly formatted E-mail address");
+                _CF_error_exists = true;
+            }
+
+        }else {
+            _CF_onError(_CF_this, "add_email", _CF_this['add_email'].value, "Please enter a properly formatted E-mail address");
+            _CF_error_exists = true;
+        }
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+
+		<script type="text/javascript">
+			if (window.ColdFusion) ColdFusion.required['add_email']=true;
+		</script>
+		<script type="text/javascript">
+<!--
+    _CF_checkCFForm_2 = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+        //form element add_email required check
+        if( _CF_hasValue(_CF_this['add_email'], "TEXT", false ) )
+        {
+            //form element add_email 'EMAIL' validation checks
+            if (!_CF_checkEmail(_CF_this['add_email'].value, true))
+            {
+                _CF_onError(_CF_this, "add_email", _CF_this['add_email'].value, "Please enter a properly formatted E-mail address");
+                _CF_error_exists = true;
+            }
+
+        }else {
+            _CF_onError(_CF_this, "add_email", _CF_this['add_email'].value, "Please enter a properly formatted E-mail address");
+            _CF_error_exists = true;
+        }
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+
+<body class="wide section-about-queue template-document_view" dir="ltr">
+	<div id="wrapperhp"> <div id="header">
+      
+      <a id="brand" href="index.cfm">ACM Queue 
+      <span>Architecting Tomorrow's Computing</span></a>
+
+	
+     <ul id="nav-utility">
+        <li id="acm-link">
+          <a href="whyjoinacm.cfm">ACM : Association for Computing Machinery</a>
+        </li>
+		<li class="first">
+         
+        </li>
+      </ul><br />
+	
+      <div id="wrap-nav">
+      <ul id="nav-primary">
+        
+		<li id="nav-home">
+          <a href="index.cfm">Home</a>
+        </li>
+       
+        <li id="nav-audiocasts">
+          <a href="listing.cfm?qc_type=audiocasts&page_title=Audiocasts">Audiocasts</a>
+        </li>
+        <li id="nav-videos">
+          <a href="listing.cfm?qc_type=videos&page_title=Videos">Videos</a>
+        </li>
+		 <li id="nav-blogs">
+          <a href="blogs.cfm">Blogs</a>
+        </li>
+        <li id="nav-planetqueue">
+          <span  id="cf_tooltip_1266275496575">
+	
+	
+		  <a href="planetq.cfm">Planet Queue</a>
+		  
+ </span> 
+        </li>
+      </ul>
+    </div>
+   <div id="message-wrap">
+     <a href="whyjoinacm.cfm">Why Join ACM?</a>
+	</div>
+	 <div id="search-wrap">
+    <form id="form-search" name="searchform" action="results.cfm">
+		<fieldset>
+			<label for="q">Search</label>
+			<input name="SearchableText" type="text" class="text" id="q" /><button type="submit" value="Search">Search</button>
+		</fieldset>
+	</form>
+	</div>
+ </div>
+		      
+
+	  
+
+
+
+	  <div id="nav-secondary">
+      <div id="sitenav">
+
+		<a class="rss-inline" href="rssfeeds.cfm">Site Feeds</a>
+		<br />
+		<a style="-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:transparent url(/img/twitter-t.png) no-repeat scroll 0 0; padding-left:16px;" target="_blank" href="http://twitter.com/ACMQueue">Twitter feed</a>
+
+	  <h4>Browse Topics</h4>
+      <ul class="topic-list">
+	  	
+        
+		
+		
+	    <li>
+          <a href="listing.cfm?item_topic=Development&qc_type=theme_list&filter=Development&page_title=Development&order=desc">Development</a>
+        </li>
+		
+      	
+		
+	    <li>
+          <a href="listing.cfm?item_topic=Power Management&qc_type=theme_list&filter=Power Management&page_title=Power Management&order=desc">Power Management</a>
+        </li>
+		
+      	
+		
+	    <li>
+          <a href="listing.cfm?item_topic=Processors&qc_type=theme_list&filter=Processors&page_title=Processors&order=desc">Processors</a>
+        </li>
+		
+      	
+		
+	    <li>
+          <a href="listing.cfm?item_topic=Compliance&qc_type=theme_list&filter=Compliance&page_title=Compliance&order=desc">Compliance</a>
+        </li>
+		
+      	
+		
+	    <li>
+          <a href="listing.cfm?item_topic=File Systems and Storage&qc_type=theme_list&filter=File Systems and Storage&page_title=File Systems and Storage&order=desc">File Systems and Storage</a>
+        </li>
+		
+      	
+		
+	    <li>
+          <a href="listing.cfm?item_topic=Databases&qc_type=theme_list&filter=Databases&page_title=Databases&order=desc">Databases</a>
+        </li>
+		
+		
+		<div  id="cf_window1266275496576" class="yuiextdlg">
+	
+	<div  id="morethemes_title" class="x-dlg-hd">
+		
+	 </div>
+	<div  id="morethemes_body" class="x-dlg-bd">
+		
+		
+	 </div>
+ </div>
+
+		<li>
+		   <a class="morethemes" id="morethemes" name="morethemes" href="javascript:ColdFusion.Window.show('morethemes')">Full List of Topics</a>
+        </li>
+      </ul>
+      <h4>Columns</h4>
+      <ul>
+        <li>
+          <a href="listing.cfm?typefilter=curmudgeon&sort=publication_date&order=desc&qc_type=curmudgeon&article_type=&item_topic=all&filter_type=topic&page_title=Curmudgeon&filter=all">Curmudgeon</a>
+	    </li>
+        <li>
+          <a href="listing.cfm?typefilter=Opinion&sort=publication_date&order=desc&qc_type=opinion&article_type=&item_topic=all&filter_type=topic&page_title=Opinion&filter=all">Opinion</a>
+        </li>
+        <li>
+          <a href="listing.cfm?typefilter=Kodevicious&sort=publication_date&order=desc&qc_type=Kodevicious&article_type=&item_topic=all&filter_type=topic&page_title=Kode Vicious&filter=all">Kode Vicious</a>
+        </li>
+      </ul>
+	  <h4>Discussions</h4>
+		<ul>
+			<li>
+                 <a href="listing.cfm?typefilter=ctoroundtable&sort=publication_date&order=desc&qc_type=ctoroundtable&article_type=&item_topic=all&filter_type=topic&page_title=CTO Roundtables&filter=all">CTO Roundtables</a>
+            </li>
+			<li>
+                 <a href="listing.cfm?typefilter=casestudy&sort=publication_date&order=desc&qc_type=casestudy&article_type=&item_topic=all&filter_type=topic&page_title=Case Studies&filter=all">Case Studies</a>
+            </li>
+			<li>
+                  <a href="listing.cfm?qc_type=interviews&page_title=Interviews">Interviews</a>
+            </li>
+		</ul>
+		
+	  <h4>Archive</h4>
+      <ul>
+        <li>
+          
+		  <a href="issuedetail.cfm?issue=1716383">Current Issue</a>
+		  
+        </li>
+        <li>
+          <a href="pastissues.cfm">Past Issues</a>
+        </li>
+		 <li>
+          <a href="listing.cfm">Articles</a>&nbsp;(Full Listing)
+        </li>
+      </ul>
+	 
+      <h4>other acm Links</h4>
+      <ul>
+        <li>
+          <a href="http://cacm.acm.org/">CACM</a>
+        </li>
+        <li>
+          <a href="technews.cfm">ACM TechNews</a>
+        </li>
+        <li>
+          <a href="dcupdates.cfm">Washington Updates</a>
+        </li>
+        <li>
+          <a href="risksforum.cfm">RISKS Forum</a>
+        </li>
+      </ul>
+    </div>
+
+		<div  id="layoutsu">
+	
+	
+		  <div  id="cf_layoutarea1266275496579" style="overflow:auto;">
+		
+		
+	      <div id="emailsignup" class="promo divider">
+
+	      <h5>
+	        <span>Sign up for QueueNews</span>
+	      </h5>
+	      <p>Our free weekly newsletter showcases all of ACM Queue&#8217;s latest articles and columns.</p>
+
+		  <form id="form-emailsignup" action="newssignup.cfm" method="post" target="_blank" onsubmit="return ColdFusion.Ajax.checkForm(this, _CF_checkCFForm_1,'cf_layoutarea1266275496579')">
+	        <fieldset>
+<!--
+	          <label for="add_email">Your Email</label>
+-->
+	          Your Email:
+	          <input name="add_email" type="text" class="text"  id="add_email"  />
+
+	          <input class="text" id="list_name" name="list_name" type="hidden" value="QUEUENEWS" />
+	          <button type="submit" value="Sign Up">
+	            <span>Sign Up</span>
+	          </button>
+	        </fieldset>
+	      </form>
+
+
+	      <h5>
+	        <span>Sign up for Queue-Updates</span>
+	      </h5>
+	      <p>Stay up to date on the latest developments at ACM Queue, including announcements about contests, interviews, and more.</p>
+
+
+		  <form id="form-emailsignup" action="newssignup.cfm" method="post" target="_blank" onsubmit="return ColdFusion.Ajax.checkForm(this, _CF_checkCFForm_2,'cf_layoutarea1266275496579')">
+	        <fieldset>
+<!--
+	          <label for="add_email">Your Email</label>
+-->
+	          Your Email:
+	          <input name="add_email" type="text" class="text"  id="add_email"  />
+
+	          <input class="text" id="list_name" name="list_name" type="hidden" value="QUEUE-UPDATES" />
+	          <button type="submit" value="Sign Up">
+	            <span>Sign Up</span>
+	          </button>
+	        </fieldset>
+	      </form>
+
+
+
+		 </div>
+		 
+	 </div>
+		
+ </div>
+		<div>
+			
+
+<div class="section">
+
+<div class="promo divider">
+
+<!-- Feb 19-21 -->
+<a href='http://www.socallinuxexpo.org/scale8x/' target='_new'>
+<img src="/ads/SCALE125x125.gif" width="125" height="125" alt="SCALE" />
+</a>
+
+<!-- Mar 1-3 -->
+<a href='http://www.go-esdc.com' target='_new'>
+<img src="/ads/Enterprise125x125.gif" width="125" height="125" alt="Enterprise Software Dev" />
+</a>
+
+<!-- Mar 22-25 -->
+<a href='http://www.voicecon.com/orlando/?_mc=CNLGVR03' target='_new'>
+<img src="/ads/VoiceCon125x125.gif" width="125" height="125" alt="VoiceCon" />
+</a>
+
+<!-- Mar 30 - Apr 1 -->
+<a href='http://en.oreilly.com/where2010' target='_new'>
+<img src="/ads/Where2.0_125x125.gif" width="125" height="125" alt="Where 2.0" />
+</a>
+
+<!-- Apr 12-15 -->
+<a href='http://en.oreilly.com/mysql2010' target='_new'>
+<img src="/ads/MySQL125x125.gif" width="125" height="125" alt="MySQL" />
+</a>
+
+<!-- Apr 25-30 -->
+<a href='http://www.sqe.com/go?SE10ACMbanner' target='_new'>
+<img src="/ads/StarEast125x125.JPG" width="125" height="125" alt="STAREAST" />
+</a>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+		</div>
+    </div>
+
+<div align='right'>
+<a href='/icpc'><img src='/icpc/layout/house.gif' border='0' style='margin:0;padding:0'> Home</a>
+	|
+		
+
+
+		
+
+			<a href='/icpc/index.cfm?page=register'><img src='/icpc/layout/register.gif' border='0' style='margin:0;padding:0'> Register</a>
+			|
+			<a href='/icpc/index.cfm?page=login'><img src='/icpc/layout/key.gif' border='0' style='margin:0;padding:0'> Login</a>
+				
+
+
+		
+
+		
+</div>
+
+<div align='left'>
+<a href='/icpc'><img src='/icpc/layout/icon-icpc.gif' border='0'></a>
+</div>
+
+<!--content start-->
+<div>
+
+<h2>Usage Instructions</h2>
+
+<p>
+The game engine is implemented in Java and supports several
+command-line options to let the user run games with different players
+and with different output behavior.  The <b><a href="/icpc/game_description/capture.zip">game
+binary</a></b> includes a JAR file to let you run games.  Since players
+are implemented as separate executables, the developer is free to use
+any development environment to code the player behavior.  In
+principle, any programming language may be used to implement a player,
+but the submission site will only accept players written in C++, C#, and
+Java.
+</p>
+
+<h3>Making Something Happen</h3>
+
+<p>
+If you just want to see a game running, you can type the
+following command.  This will start the game with a basic 2D view and
+without any player code associated with either player.  Bumpers will
+sit still and the sleds will just drive across the field.
+</p>
+
+<pre>
+java -jar capture.jar
+</pre>
+
+<h3>Using Built-In Players</h3>
+
+<p>
+If you want to see the players do something a little bit interesting,
+you can run the game with the following options.  This will associate
+simple, built-in code for each of the two players.  The red player
+will be controlled by a player called RandomPlayer, one that just
+generates a new, random move every 10 turns.  The blue player will be
+controlled by a copy of LoopyPlayer, one that drives its pieces in
+circular arcs.
+</p>
+
+<pre>
+java -jar capture.jar -player builtin RandomPlayer -player builtin LoopyPlayer
+</pre>
+
+<p>
+There are three built-in players available, RandomPlayer, LoopyPlayer
+and DoNothingPlayer.  These players don't do much to make the game
+interesting, but they do provide very simple opponents that should be
+easy for you to beat.
+</p>
+
+<h3>Running a C++ Player</h3>
+
+<p>
+Let's say you've implemented a player in C++.  You've compiled your
+player to an executable called "hunter".   You can run this player as
+the red player using the following command line.  You will be playing
+against a copy of the built-in LoopyPlayer.
+</p>
+
+<pre>
+java -jar capture.jar -player cpp hunter -player builtin LoopyPlayer
+</pre>
+
+<h3>Running a Java Player</h3>
+
+<p>
+Let's say you've implemented a player in Java.  You've compiled your
+player to a class called "Gatherer".   You can run this player as
+the blue player using the following command line.  Here, you will be playing
+against a copy of the built-in RandomPlayer.
+</p>
+
+<pre>
+java -jar capture.jar -player builtin RandomPlayer -player java Gatherer
+</pre>
+
+<h3>Running an Arbitrary Player</h3>
+
+<p>
+The above examples of running a player as a C++ executable or as a
+Java program are really just special cases of the same mechanism.  The
+game engine's <tt>-player pipe</tt> option gives a more general
+mechanism for running the player executable.  This method for starting
+up a player can let you pass in additional command-line parameters to
+the player if these are useful during development.  Keep in mind that,
+during tournament matches, your player won't be passed any
+command-line arguments.
+</p>
+
+<p>
+The <tt>pipe</tt> keyword is followed by an integer <var>n</var>.  The
+next <var>n</var> command-line arguments are taken as the command line
+for the executable that is to serve as the player.  For example, the
+following command line could be used to run the hunter C++
+program as the blue player and the Gatherer Java program as
+the red player.
+</p>
+
+<pre>
+java -jar capture.jar -player pipe 2 java Gatherer -player pipe 1 hunter
+</pre>
+
+<h3>Alternative Visualization</h3>
+
+<p>
+The simple 2D view that's provided by default is intended to give a
+basic, low-overhead visualization of what's going on in the game.
+This view should work reasonably well on just about any system and doesn't
+require installation of any additional libraries.
+</p>
+
+<p>
+The Queue ICPC Challenge distribution also includes a 3D view.  To use this
+view, you have to have the JOGL package installed on your machine.  In
+particular, you have to have the JOGL jar files visible in your
+<tt>CLASSPATH</tt> and the dynamic-link libraries visible in your
+library path.  You can find JOGL binaries for a variety of platforms
+and installation instructions
+at: <a href="https://jogl.dev.java.net/">https://jogl.dev.java.net/</a>
+</p>
+
+<p>
+Once you have JOGL configured, the easiest way to run the game is to
+just add <tt>capture.jar</tt> to your <tt>CLASSPATH</tt>.  If you
+do this, then you can run with the 3D view using a command line like
+the following:
+</p>
+
+<pre>
+java icpc.challenge.main.Game -player builtin RandomPlayer -player builtin LoopyPlayer -view 3D
+</pre>
+
+<h3>Playing the Game</h3>
+
+<p>
+In single-player mode, the user can direct the actions of one of the
+game pieces.  This can help the programmer to come up with creative
+strategies by playing one of the pieces and letting their code play
+the other two.  The <tt>-player sled</tt> option lets the user control the
+sled with the left and right cursor keys.  This can be followed by the
+same options used to specify a built-in or an external player.  For
+example, the following command line will play the built-in LoopyPlayer
+against the built-in RandomPlayer.  However, the user will control the
+operation of the RandomPlayer's sled.
+</p>
+
+<pre>
+java -jar capture.jar -player builtin LoopyPlayer -player sled builtin RandomPlayer
+</pre>
+
+<p>
+The <tt>-player bumper0</tt> option lets the user control one of the
+bumpers, while a player implementation controls the other two pieces.
+For example, the following command line could be used play the
+built-in RandomPlayer against a C++ player called "hunter".
+The C++ implementation will control the sled and one of the bumpers
+and the the user will control the remaining bumper with the four
+cursor keys.  Although bumpers don't normally experience friction,
+when a user is controlling one of the bumpers, a small amount of
+friction is applied after each move in an effort to make the bumper
+easier to control.
+</p>
+
+<pre>
+java -jar capture.jar -player bumper0 cpp hunter -player builtin RandomPlayer
+</pre>
+
+<p>
+The <tt>-player bumper1</tt> option works just like
+<tt>-player bumper0</tt>, but lets the user control the other bumper.
+</p>
+
+<h3>Recording a Game</h3>
+
+<p>
+If you want, you can send a record of game events to a trace file for
+later viewing.  The following command will create a rather large trace
+file called ``trace.txt'' containing the sequence of states.
+</p>
+
+<pre>
+java -jar capture.jar -player pipe 2 java Gatherer -player pipe 1 hunter
+     -view trace trace.txt
+</pre>
+
+<p>
+After you generate a trace file, you can play it back with a trace
+player.  If you've added capture.jar to your CLASSPATH, then the
+following command will play back this trace using the basic view to
+show the contents of trace.txt.
+</p>
+
+<pre>
+java icpc.challenge.view.TracePlayer -trace trace.txt
+</pre>
+
+<h3>Recording a Turn History</h3>
+
+<p>
+The trace file generated by the <tt>-view trace</tt> option records
+game event information used by the game's visualization components.
+It omits some of the information that is available to the players and
+includes extra information that players don't get to see.
+The <tt>-view turns</tt> option is intended to capture the sequence
+of messages exchanged between the game and its two players.  Running a
+game like the following will create a turn history file called
+``turns.txt'' that contains the sequence of states as seen by the red
+player.  In the turn history, each state is followed by the move
+response that was received from each of the players.
+</p>
+
+<pre>
+java -jar capture.jar -player java Gatherer -player exe  hunter -view turns turns.txt
+</pre>
+
+<p>
+A turn history is intended to help developers debug their players.  The
+file reports game states and moves as seen by the game engine.  The
+re-mapping of colors, game locations and directions normally done when
+interacting with the blue player is not apparent in this report.
+</p>
+
+<p>
+A game can be visualized using its turn file.  Since the turn file
+omits some of the information that's included in a trace, the
+visualization will not be as smooth and it will not include all
+effects.  However, it can still be useful to give the developer a
+sense of what was going on at a particular point in the game.  If
+you've added <tt>capture.jar</tt> to your <tt>CLASSPATH</tt>, The
+following command will play back a game from its turn file.
+</p>
+
+<pre>
+java icpc.challenge.view.TurnPlayer -turns turns.txt
+</pre>
+
+<h3>Synchronous Operation</h3>
+
+<p>
+For debugging, players can be started in synchronous mode.  This
+forces the game engine to wait for every move from the player before
+simulating the next game turn.  The following table shows the variants
+of the <tt>-player</tt> option that can be used to request synchronous
+operation with a particular player.
+</p>
+
+<table border>
+<tr>
+<th>Real-Time Response</th><th>Synchronous Mode</th>
+</tr>
+<tr>
+<td>-player java</td> <td>-player syncjava</td>
+</tr>
+<tr>
+<td>-player cpp</td> <td>-player synccpp</td>
+</tr>
+<tr>
+<td>-player pipe</td> <td>-player syncpipe</td>
+</tr>
+</table>
+
+</div>
+<!--content stop-->
+
+</div>
+ <div id="portal-footer">
+      <div id="footer">
+        <ul>
+          <li>
+            <a href="whatisqueue.cfm">About Queue</a>
+          </li>
+          <li>
+            <a href="aboutplanetqueue.cfm">About Planet Queue</a>
+          </li>
+          <li>
+            <a href="editorialboard.cfm">Editorial Board</a>
+          </li>
+          <li>
+            <a href="whyjoinacm.cfm">Join ACM</a>
+          </li>
+          <li>
+            <a href="http://www.acm-media.org">Advertising</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="rssfeeds.cfm">RSS Feeds</a>
+          </li>
+
+          <li>
+            <a href="privacypolicy.cfm">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="contactus.cfm">Contact us</a>
+          </li>
+          <li>
+            <a href="feedback.cfm">LOVE IT, HATE IT? LET US KNOW</a>
+          </li>
+        </ul>
+        <p class="copyright">&#169; 2010 ACM, Inc. All Rights
+        Reserved.</p>
+     </div>
+     <!-- /footer -->
+ </div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6562869-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
