@@ -9,6 +9,9 @@ you can go see the archived `usage <doc/usage.html>`_ doc.
 To download the binaries you may visit the upstream source challenge
 website http://icpc.baylor.edu/challenge/2009/challenge2009.html
 
+The binary package may also be downloaded directly from
+http://queue.acm.org/icpc/2010/capture.zip
+
 `matches/ <matches/>`_
 ----------------------
 
